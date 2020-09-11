@@ -1,0 +1,42 @@
+unit untConfBanc;
+
+interface
+
+uses
+  forms, untDM;
+
+procedure SetDatabaseName(ls_CamiBanc: String);
+function GetDatabaseName(): String;
+procedure Conectar();
+procedure Desconectar();
+
+
+implementation
+
+procedure SetDatabaseName(ls_CamiBanc: String);
+begin
+  DM.Banco.DatabaseName := ls_CamiBanc;
+end;
+
+//------------------------------------------------------------------------------
+
+function GetDatabaseName(): String;
+begin
+  Result := DM.Banco.DatabaseName;
+end;
+
+//------------------------------------------------------------------------------
+
+procedure Conectar();
+begin
+  DM.Banco.Connected := True;
+end;
+
+//------------------------------------------------------------------------------
+
+procedure Desconectar();
+begin
+  DM.Banco.Connected := False;
+end;
+
+end.

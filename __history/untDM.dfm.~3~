@@ -1,0 +1,22 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 150
+  Width = 215
+  object Banco: TIBDatabase
+    Connected = True
+    DatabaseName = 'localhost:C:\Users\walla\OneDrive\'#193'rea de Trabalho\BANCOAPAE.GDB'
+    Params.Strings = (
+      'user_name=sysdba'
+      'password=masterkey')
+    LoginPrompt = False
+    ServerType = 'IBServer'
+    Left = 48
+    Top = 40
+  end
+  object Trans: TIBTransaction
+    Active = True
+    DefaultDatabase = Banco
+    Left = 96
+    Top = 40
+  end
+end

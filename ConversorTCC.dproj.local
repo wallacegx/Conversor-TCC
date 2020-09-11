@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/11 16:55:07.588,=C:\Users\walla\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/11 16:55:29.071,C:\Users\walla\OneDrive\Área de Trabalho\Delphi\Conversor-TCC\untPrincipal.pas=C:\Users\walla\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/11 16:55:29.071,C:\Users\walla\OneDrive\Área de Trabalho\Delphi\Conversor-TCC\untPrincipal.dfm=C:\Users\walla\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/09/11 16:55:32.816,C:\Users\walla\OneDrive\Área de Trabalho\Delphi\Conversor-TCC\ConversorTCC.dproj=C:\Users\walla\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/09/11 17:08:35.996,=C:\Users\walla\OneDrive\Área de Trabalho\Delphi\Conversor-TCC\untfrmfrmBancCone.pas</Transaction>
+    <Transaction>2020/09/11 17:08:44.023,=C:\Users\walla\OneDrive\Área de Trabalho\Delphi\Conversor-TCC\untDM.pas</Transaction>
+    <Transaction>2020/09/11 17:08:46.320,=C:\Users\walla\OneDrive\Área de Trabalho\Delphi\Conversor-TCC\untConf.pas</Transaction>
+    <Transaction>2020/09/11 17:08:48.325,=C:\Users\walla\OneDrive\Área de Trabalho\Delphi\Conversor-TCC\untConfBanc.pas</Transaction>
+  </Transactions>
+</BorlandProject>

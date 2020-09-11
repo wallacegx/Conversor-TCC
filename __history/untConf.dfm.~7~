@@ -1,0 +1,67 @@
+object frmConf: TfrmConf
+  Left = 0
+  Top = 0
+  Caption = 'Configura'#231#245'es'
+  ClientHeight = 88
+  ClientWidth = 279
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblCaminho: TLabel
+    Left = 8
+    Top = 8
+    Width = 88
+    Height = 13
+    Caption = 'Caminho do Banco'
+  end
+  object btnSeleCami: TSpeedButton
+    Left = 248
+    Top = 23
+    Width = 23
+    Height = 23
+    Hint = 'Selecionar Caminho do Banco'
+    ParentShowHint = False
+    ShowHint = True
+    OnClick = btnSeleCamiClick
+  end
+  object edtCaminho: TEdit
+    Left = 8
+    Top = 24
+    Width = 241
+    Height = 21
+    TabOrder = 0
+  end
+  object btnConectar: TButton
+    Left = 8
+    Top = 51
+    Width = 129
+    Height = 25
+    Caption = 'Conectar/Desconectar'
+    TabOrder = 1
+  end
+  inline frmfrmBancCone1: TfrmfrmBancCone
+    Left = 146
+    Top = 49
+    Width = 82
+    Height = 28
+    TabOrder = 2
+    ExplicitLeft = 146
+    ExplicitTop = 49
+  end
+  object FileOpenDialog1: TFileOpenDialog
+    DefaultExtension = 'gdb'
+    FavoriteLinks = <>
+    FileTypes = <>
+    Options = []
+    Left = 120
+    Top = 5
+  end
+end

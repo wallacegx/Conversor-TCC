@@ -1,0 +1,57 @@
+unit untMain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, IBX.IBCustomDataSet,
+  Datasnap.DBClient, Datasnap.Provider, IBX.IBQuery, Vcl.Grids, Vcl.DBGrids,
+  untDM, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TfrmMain = class(TForm)
+    IBQuery1: TIBQuery;
+    DataSource1: TDataSource;
+    IBQuery1CODALUNO: TIntegerField;
+    IBQuery1NOME: TIBStringField;
+    IBQuery1DATANASC: TDateField;
+    IBQuery1SEXO: TIBStringField;
+    IBQuery1OBSERVACAO: TWideMemoField;
+    IBQuery1CODDEFICIENCIA: TIntegerField;
+    IBQuery1CODTURMA: TIntegerField;
+    IBQuery1EMAIL: TIBStringField;
+    ClientDataSet1: TClientDataSet;
+    DataSetProvider1: TDataSetProvider;
+    ClientDataSet1CODALUNO: TIntegerField;
+    ClientDataSet1NOME: TWideStringField;
+    ClientDataSet1DATANASC: TDateField;
+    ClientDataSet1SEXO: TWideStringField;
+    ClientDataSet1OBSERVACAO: TWideMemoField;
+    ClientDataSet1CODDEFICIENCIA: TIntegerField;
+    ClientDataSet1CODTURMA: TIntegerField;
+    ClientDataSet1EMAIL: TWideStringField;
+    btnConf: TBitBtn;
+    procedure btnConfClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMain: TfrmMain;
+
+implementation
+
+uses
+  untConf;
+
+{$R *.dfm}
+
+procedure TfrmMain.btnConfClick(Sender: TObject);
+begin
+  frmConf.ShowModal();
+
+end;
+
+end.

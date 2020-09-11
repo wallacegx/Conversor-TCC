@@ -1,0 +1,19 @@
+unit untConfBanc;
+
+interface
+
+uses
+  forms, untDM;
+
+procedure Configurar(ls_CamiBanc: String);
+procedure Conectar();
+procedure Desconectar();
+
+implementation
+
+procedure Configurar(ls_CamiBanc: String);
+begin
+  DM.Banco.DatabaseName := ls_CamiBanc;
+end;
+
+end.

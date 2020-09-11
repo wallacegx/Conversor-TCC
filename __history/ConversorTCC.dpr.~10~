@@ -1,0 +1,19 @@
+program ConversorTCC;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  untConf in 'untConf.pas' {frmConf},
+  untConfBanc in 'untConfBanc.pas',
+  untDM in 'untDM.pas' {DM: TDataModule},
+  untfrmfrmBancCone in 'untfrmfrmBancCone.pas' {frmfrmBancCone: TFrame},
+  untMain in 'untMain.pas' {frmMain};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TDM, DM);
+  Application.CreateForm(TfrmMain, frmMain);
+  Application.Run;
+end.

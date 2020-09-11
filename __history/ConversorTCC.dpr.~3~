@@ -1,0 +1,20 @@
+program ConversorTCC;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils,
+  Main in 'Main.pas' {Form1},
+  untConfBanc in 'untConfBanc.pas',
+  untDM in 'untDM.pas' {DM: TDataModule};
+
+begin
+  try
+
+  except
+    on E: Exception do
+      Writeln(E.ClassName, ': ', E.Message);
+  end;
+end.
